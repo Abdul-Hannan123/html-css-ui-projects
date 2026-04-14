@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url("images/bg-desktop.svg");
+    background-color: rgb(114, 85, 181);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 52px;
+    color: white;
+}
+
+.heading h1 {
+    font-size: xx-large;
+    padding-left: 8px;
+    letter-spacing: 1px;
+}
+.section {
+    display: flex;
+    align-items: center;
+}
+
+.img img {
+    width: 530px;
+}
+
+.img {
+    margin: 40px 0 0 60px;
+}
+
+.content {
+    margin-left: 60px;
+}
+
+.content h3 {
+    color: white;
+    font-size: 32px;
+    line-height: 1.7;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+.content h6 {
+    color: rgb(235, 234, 234);
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.content .btn {
+    color: rgb(164, 95, 197);
+    border: none;
+    padding: 14px 50px 14px 50px;
+    border-radius: 28px;
+    font-size: 15px;
+    margin-top: 10px;
+    box-shadow: 2px 3px 10px rgb(90, 89, 89);
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(222, 119, 230);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    margin-top: 40px;
+    margin-right: 100px;
+    color: white;
+}
+
+.footer img {
+    cursor: pointer;
+    filter: invert(1);
+    margin: 0 3px 0 3px;
+    transition: 0.6s;
+}
+
+.footer img:hover {
+    filter: invert(0);
+    background-color: rgb(226, 101, 155);
+    border-radius: 50%;
+}
+@media (max-width: 600px) {
+    body {
+        background-image: url("images/bg-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img img {
+        width: 300px ;
+    }
+
+    .img {
+        margin: 60px auto 32px auto;
+    }
+
+    .heading h1 {
+        font-size: 25px;
+    }
+    .content h3{
+        font-size: 18px;
+        line-height: 1.5;
+        margin-top: 0px;
+       text-align: center;
+        
+    }
+    .content{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .content h6{
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+    #mobile{
+        display: none;
+    }
+    .content .btn{
+        padding: 12px 60px;
+    }
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 75px;
+}}
